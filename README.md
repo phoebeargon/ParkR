@@ -8,7 +8,9 @@ Usage
 ------
 
 Create the directory where you would like to store the project
+
 Clone the project into this new directory
+
 
 Create and activate virtual environment to work in within your new directory:
 ```
@@ -23,6 +25,7 @@ Install requirements for the project on your virtual environment:
 
 
 To run the project locally:
+
 In the main project folder (same folder with manage.py) run:
 ```
     $ python manage.py runserver
