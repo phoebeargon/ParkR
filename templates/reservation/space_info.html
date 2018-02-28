@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+Welcome
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <h2>More about {{space.owner}}'s space...</h2>
+            <p>Location: {{space.lat}} </p>
+            <p>Information: {{space.note}}</p>
+            <p>Rates: </p>
+            <p></p>
+        </div>
+    </div>
+{% endblock %}

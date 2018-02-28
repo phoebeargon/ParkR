@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+Welcome
+{% endblock %}
+
+{% block content %}
+    <form method="post" action="{% url 'new_space' %}">
+        {{ form }}
+
+        {% csrf_token %}
+        <button type="submit">List this parking space</button>
+    </form>
+{% endblock %}
