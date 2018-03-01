@@ -1,14 +1,18 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 
 {% block title %}
 Welcome
 {% endblock %}
 
 {% block content %}
-    <form method="post" action="{% url 'new_space' %}">
-        {{ form }}
+    <div class="container">
+        <form method="post" action="{% url 'new_space' %}">
 
-        {% csrf_token %}
-        <button type="submit">List this parking space</button>
-    </form>
-{% endblock %}
+            {% csrf_token %}
+
+            {{ form|crispy }}
+            <button type="submit " class="tbLink">List this parking space</button>
+        </form>
+    </div>
+{% endblock %}d
