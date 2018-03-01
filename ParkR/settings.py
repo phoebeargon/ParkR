@@ -131,6 +131,6 @@ STATICFILES_DIRS = [
 
 LOGIN_REDIRECT_URL="parkr_home"
 LOGOUT_REDIRECT_URL="parkr_home"
-LOGIN_URL="player_login"
+LOGIN_URL="user_login"
 
 CRISPY_TEMPLATE_PACK='bootstrap3'

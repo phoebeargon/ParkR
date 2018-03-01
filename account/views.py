@@ -17,4 +17,4 @@ def profile(request):
 class SignUpView(CreateView):
     form_class = UserCreationForm
     template_name = "account/signup_form.html"
-    success_url = reverse_lazy('parkr_home')
+    success_url = reverse_lazy('user_login')

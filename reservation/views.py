@@ -3,7 +3,6 @@ from django.shortcuts import render, get_object_or_404
 from listing.models import ParkingSpace
 
 
-@login_required()
 def information(request, id):
     space = get_object_or_404(ParkingSpace, pk=id)
     return render(request,
