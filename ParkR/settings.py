@@ -134,5 +134,3 @@ LOGOUT_REDIRECT_URL="parkr_home"
 LOGIN_URL="player_login"
 
 CRISPY_TEMPLATE_PACK='bootstrap3'
-
-GOOGLE_MAPS_API_KEY = 'AIzaSyDdLX6bV8gF70VsWVU_b1QsD2Hj-vvnmnk'
