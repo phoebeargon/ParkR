@@ -19,4 +19,4 @@ def home(request):
     jsonList = json.dumps(latlngList)
     noteList = json.dumps(noteList)
 
-    return render(request, 'ParkR/home.html', {"djangoMapMarkers":jsonList,"notes":noteList,"idVals":idVal})
+    return render(request, 'ParkR/home.html', {"djangoMapMarkers":jsonList,"notes":noteList})

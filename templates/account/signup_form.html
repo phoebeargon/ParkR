@@ -7,16 +7,18 @@
 
 {% block content %}
 
-    <form role="form"
-          action="{% url 'user_signup' %}"
-          method="post">
-        {% csrf_token %}
+    <div class="container">
+        <form role="form"
+              action="{% url 'user_signup' %}"
+              method="post">
+            {% csrf_token %}
 
-        <p>Please fill in the form below to create an account.</p>
+            <p>Please fill in the form below to create an account.</p>
 
-        {{ form|crispy }}
+            {{ form|crispy }}
 
-        <button type="submit" class="btn btn-success">Sign up</button>
-    </form>
+            <button type="submit" class="btn btn-success">Sign up</button>
+        </form>
+    </div>
 
 {% endblock %}
