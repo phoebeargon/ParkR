@@ -9,7 +9,6 @@ def home(request):
     noteList = []
     allObjects = ParkingSpace.objects.all()
     for result in allObjects.values():
-        idVal = id(result)
         lat = result.get("lat")
         lng = result.get("lng")
         note = result.get("note")
