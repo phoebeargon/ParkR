@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.contrib.auth.views import LoginView, LogoutView, PasswordChangeView
 from django.contrib.auth import views as auth_views
-from .views import SignUpView, profile
+from .views import SignUpView, profile, show
 
 
 urlpatterns = [
@@ -15,6 +15,7 @@ urlpatterns = [
         SignUpView.as_view(),
         name='user_signup'),
     url(r'profile$', profile, name="user_profile"),
+    url(r'show/(?P<id>\d+)/$', show, name="user_show"),
     url(r'change-password/',
         PasswordChangeView.as_view(template_name="account/change_password.html"),
         name="user_password"),
