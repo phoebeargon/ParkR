@@ -7,8 +7,10 @@ Welcome
 {% block content %}
     <div class="jumbotron">
         <div class="container">
-            <h1>Hello, {{ request.user.username }}</h1>
-            <a href="{% url 'new_space' %}">List a parking space</a>
+            <h1>Hello, {{ request.user.username }}</h1><br>
+            <a href="{% url 'new_space' %}" class="tbLink">List a parking space</a>
+            <a href="#" class="tbLink">Reservation history</a>
+            <a href="{% url 'user_password' %}" class="tbLink">Change password</a><br><br>
             <p>View your current parking spaces:</p>
             {% if owned_spaces %}
                 <div class="list-group">
