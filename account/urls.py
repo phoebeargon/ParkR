@@ -1,6 +1,5 @@
 from django.conf.urls import url
 from django.contrib.auth.views import LoginView, LogoutView, PasswordChangeView
-from django.contrib.auth import views as auth_views
 from .views import SignUpView, profile, show
 
 
